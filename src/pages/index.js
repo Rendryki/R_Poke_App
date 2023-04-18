@@ -1,10 +1,12 @@
-import Navbar from './components/navbar';
-import IndexPageContent from './components/indexPageContent';
+import IndexPageContent from '../components/indexPageContent';
+import Head from 'next/head';
 
 export default function Home() {
   return (
-      <>
-          <Navbar />
+      <>  
+          <Head>
+            <title>Homepage</title>            
+          </Head>
           <IndexPageContent />
       </>
   )

@@ -1,0 +1,5 @@
+.pokemon_Card{
+    width: 200px;
+    display: grid;
+    text-transform: capitalize;
+}

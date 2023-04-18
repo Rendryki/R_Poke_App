@@ -1,7 +1,7 @@
-import PokemonLogo from '../../../public/pokemon-name-img.png';
-import PokedexImg from '../../../public/pokedex-img.png';
+import PokemonLogo from '../../public/pokemon-name-img.png';
+import PokedexImg from '../../public/pokedex-img.png';
 import Image from "next/image";
-import styles from '../../styles/css.modules/indexPageContent.module.css';
+import styles from '../styles/css.modules/indexPageContent.module.css';
 
 export default function IndexPageContent(){
     return (

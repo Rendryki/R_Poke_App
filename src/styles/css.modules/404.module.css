@@ -1,0 +1,15 @@
+.erro{
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.erro_link{
+    text-decoration: none;
+    color: #D91A1A;
+}
+
+.erro_link:hover{
+    color: #591515;
+    text-decoration: underline;
+}

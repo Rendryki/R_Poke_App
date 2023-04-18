@@ -1,0 +1,4 @@
+.pokedex{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
