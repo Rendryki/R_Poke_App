@@ -1,5 +1,33 @@
 .pokemon_Card{
-    width: 200px;
-    display: grid;
+    width: 250px;
     text-transform: capitalize;
+    text-align: center;
+    background-color: #1C2326;
+    margin: 30px auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border:  2px solid #D91A1A;
+    color: white;
+}
+
+.pokemon_Card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.pokemon_IMG{
+    margin: auto;
+}
+
+.pokemon_id{
+    width: 50px;
+    background-color: #D91A1A;
+    margin: 0px auto;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.dinamic_link{
+    text-decoration: none;
 }

@@ -7,8 +7,8 @@ export default function IndexPageContent(){
     return (
         <div className={styles.page}>
         
-        <h1>Bem vindo a sua Pokedex!</h1>
-        <p>Aqui você vai encontrar as principais informações sobre seus Pokemons favoritos</p>
+        <h1>Bem vindo ao PokeApp!</h1>
+        <p>Aqui você vai encontrar as principais informações sobre seus Pokemons favoritos, diversos itens, Pokebolas e muito mais!</p>
         <p>Pesquise e acesse os principais dados sobre seu <Image src={PokemonLogo} width={50} alt="Logo Pokémon" /> desejado de forma rápida e fácil!</p>
         <Image src={PokedexImg} alt="Pokedex Image" />
         

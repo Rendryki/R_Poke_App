@@ -1,0 +1,137 @@
+.pokemon_info{
+    width: 80%;
+    margin: 20px auto;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #1C2326;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border:  2px solid #D91A1A;
+    color: white;
+}
+
+.pokemon_id{
+    width: 50px;
+    background-color: #D91A1A;
+    margin: 20px auto;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.pokemon_type{
+    margin: 20px 10px;
+    padding: 0px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pokemon_type.grass{
+    background-color: #7AC74C;
+}
+.pokemon_type.poison{
+    background-color: #A33EA1;
+}
+.pokemon_type.normal{
+    background-color: #A8A77A;
+    color: #000;
+}
+.pokemon_type.fighting{
+    background-color: #C22E28;
+}
+.pokemon_type.flying{
+    background-color: #A98FF3;
+}
+.pokemon_type.ground{
+    background-color: #E2BF65;
+}
+.pokemon_type.rock{
+    background-color: #B6A136;
+}
+.pokemon_type.bug{
+    background-color: #A6B91A;
+}
+.pokemon_type.ghost{
+    background-color: #735797;
+}
+.pokemon_type.steel{
+    background-color: #B7B7CE;
+    color: #000;
+}
+.pokemon_type.fire{
+    background-color: #EE8130;
+}
+.pokemon_type.water{
+    background-color: #6390F0;
+}
+.pokemon_type.electric{
+    background-color: #F7D02C;
+}
+.pokemon_type.psychic{
+    background-color: #F95587;
+}
+.pokemon_type.ice{
+    background-color: #96D9D6;
+    color: #000;
+}
+.pokemon_type.dragon{
+    background-color: #6F35FC;
+}
+.pokemon_type.dark{
+    background-color: #705746;
+}
+.pokemon_type.fairy{
+    background-color: #D685AD;
+}
+.pokemon_type.unknown{
+    background-color: #FFF;
+    color: #000;
+}
+.pokemon_type.shadow{
+    background-color: #777;
+}
+
+.pokemon_stats{
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.voltar_btn{
+    background-color: #A61414;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #1C2326;
+    border: 1px solid #1C2326;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+.voltar_btn:hover{
+    background-color: #D91A1A;
+}
+
+.voltar_btn_card{
+    background-color: #A61414;
+    width: 250px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1C2326;
+    border: 1px solid #1C2326;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+.voltar_btn_card:hover{
+    background-color: #D91A1A;
+}

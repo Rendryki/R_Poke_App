@@ -1,14 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
+import PokeballIMG from '../../public/pokeball-image-pokeitensPage.png'
+import ItemIMG from '../../public/unovastone-item-image.png'
 
-export async function getStaticProps() {
-  const res = await fetch(`https://pokeapi.co/api/v2/item-category/33/`);
-  const data = await res.json();
-  const itemList = data.items;
-
-  return { props: { itemList } }
-}
-// https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/<<item name>>.png get the images of each iten
 export default function PokemonItens({ itemList }) {
   console.log(itemList)
   
@@ -17,18 +12,8 @@ export default function PokemonItens({ itemList }) {
       <Head>
             <title>Pokeitens</title>            
       </Head>
-      <Link href='/pokeItens/pokeballs'>Pokebolas</Link>
-      <Link href='/'>Pokeitens</Link>
-      {
-        itemList.map((e) => ( 
-          <p>{e.name}</p>
-        ))
-      }
-      {
-        itemList.forEach((e) => {
-          <p>{e.name}</p>
-      })
-      }
+      <Image src={PokeballIMG} width={300} height={300} alt='Pokeball menu image'/>
+      <Image src={ItemIMG} width={250} height={300} alt='Unova stone item menu image'/>
       </>
 
   )

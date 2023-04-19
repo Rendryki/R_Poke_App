@@ -7,6 +7,7 @@
 .erro_link{
     text-decoration: none;
     color: #D91A1A;
+    display: block;
 }
 
 .erro_link:hover{

@@ -1,4 +1,38 @@
 .pokedex{
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    gap: 20px;
 }
+
+.btn{
+    background-color: #A61414;
+    color: white;
+    width: 110px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid #1C2326;
+    margin: 50px auto 0px;
+}
+
+.btn:hover{
+    background-color: #D91A1A;
+    transition: 0.5s;
+}
+
+.nav_menu{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.nav_menu p {
+    display: inline;
+    margin: 0px 20px ;
+    font-weight: bold;
+}
+
