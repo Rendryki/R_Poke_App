@@ -1,0 +1,25 @@
+.item_Card{
+    width: 200px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 0.7em;
+    background-color: #1C2326;
+    margin: 30px auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border:  2px solid #D91A1A;
+    color: white;
+}
+
+.item_Card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.item_IMG{
+    margin: auto;
+}
+
+.dinamic_link{
+    text-decoration: none;
+}

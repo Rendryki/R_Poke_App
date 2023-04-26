@@ -1,0 +1,24 @@
+.pokeball_Card{
+    width: 250px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: #1C2326;
+    margin: 30px auto;
+    padding: 10px 0px;
+    border-radius: 10px;
+    border:  2px solid #D91A1A;
+    color: white;
+}
+
+.pokeball_Card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.pokeball_IMG{
+    margin: auto;
+}
+
+.dinamic_link{
+    text-decoration: none;
+}

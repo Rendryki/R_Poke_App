@@ -1,0 +1,32 @@
+.pokeball_page{
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+    
+}
+
+.pokeball_card_infos{
+    margin: 50px auto;
+    width: 90%;
+    border-radius: 10px;
+    border:  2px solid #D91A1A;
+    background-color: #1C2326;
+    color: white;
+    padding: 50px 10px;
+}
+
+.pokeball_name{
+    text-transform: capitalize;
+}
+
+.pokeball_category{
+    width: 150px;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: #D91A1A;
+    margin: 20px auto;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}

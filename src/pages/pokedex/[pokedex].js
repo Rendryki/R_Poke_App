@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PaginaAnteriorBtn from "@/components/paginaAnteriorBtn";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -12,21 +13,26 @@ export default function Pokedex({}){
     
     const [pokemonInfo, setPokemonInfo] = useState([]);
     const [pageLoaded, setPageLoaded] = useState(false);
+    const [sucessfullyLoaded, setSucessfullyLoaded] = useState(false);
 
     useEffect(() => {
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
           .then((res) => res.json())
           .then((data) => {
             setPokemonInfo(data);
+            setSucessfullyLoaded(true);
+          });
+          setTimeout(() => {
             setPageLoaded(true);
-          })
+          }, 1000);
       }, []);
       
     return(
-        <>
-        <Link className={styles.voltar_btn} href="/pokedex">Página Anterior</Link>
+        <div className={styles.page}>
+        <PaginaAnteriorBtn PaginaAnteriorPath='/pokedex/' Text='Página anterior'/>
         <div className={styles.pokemon_info}>
-        {pageLoaded? 
+        {pageLoaded?
+        sucessfullyLoaded? 
             <>
             <h1>{pokemonInfo.name}</h1>
             <Image width={300} height={300} key={`pokemon${pokemonId}`} src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`} alt={`image ${pokemonInfo.name}`}/>
@@ -53,8 +59,10 @@ export default function Pokedex({}){
             <Image src={ErrorIMG} width={300} height={200} alt='Sad pikachu error image'/>
             <Link className={styles.voltar_btn_card} href="/pokedex">Voltar pra pagina anterior</Link>
             </>
+        :
+        <div className={styles.loader}></div>
         }
         </div>
-        </>
+        </div>
     )
 }

@@ -8,8 +8,8 @@ export default function IndexPageContent(){
         <div className={styles.page}>
         
         <h1>Bem vindo ao PokeApp!</h1>
-        <p>Aqui você vai encontrar as principais informações sobre seus Pokemons favoritos, diversos itens, Pokebolas e muito mais!</p>
-        <p>Pesquise e acesse os principais dados sobre seu <Image src={PokemonLogo} width={50} alt="Logo Pokémon" /> desejado de forma rápida e fácil!</p>
+        <h3>Aqui você vai encontrar as principais informações sobre seus Pokemons favoritos, diversos itens, Pokebolas e muito mais!</h3>
+        <h3>Pesquise e acesse os principais dados sobre seu <Image src={PokemonLogo} width={50} alt="Logo Pokémon" /> desejado de forma rápida e fácil!</h3>
         <Image src={PokedexImg} alt="Pokedex Image" />
         
         </div>

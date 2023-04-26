@@ -1,0 +1,39 @@
+.card{
+    width: 300px;
+    min-height: 360px;
+    display: inline-block;
+    margin: 20px 50px;
+    background-color: #1C2326;
+    padding: 50px;
+    border: 2px solid #D91A1A;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+
+.card h1{
+    font-size: 1.6em;
+    text-align: center;
+}
+
+@media only screen and (max-width:520px){
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
+    .card{
+        width: 250px;
+        min-height: 250px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+

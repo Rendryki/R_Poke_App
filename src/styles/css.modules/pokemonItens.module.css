@@ -1,0 +1,26 @@
+.pokemonItens_page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 50px auto;
+    gap: 20px;
+    text-align: center;
+    border-bottom: 2px solid #D91A1A;
+}
+
+.pokemonItens_page_page_heading{
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.pokemonItens__Title{
+    text-align: left;
+    width: 90%;
+    margin: 50px auto;
+    font-weight: bold;
+}
