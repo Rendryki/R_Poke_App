@@ -4,6 +4,7 @@ import styles from '../../../styles/css.modules/pokeballs.module.css';
 import Image from 'next/image';
 import PokemonLogo from '../../../../public/pokemon-name-img.png';
 import PaginaAnteriorBtn from '@/components/paginaAnteriorBtn';
+import { v4 as uuidv4 } from 'uuid';
 
 export async function getStaticProps() {
   const SpecialPokeballsres = await fetch(`https://pokeapi.co/api/v2/item-category/33/`);
@@ -36,17 +37,17 @@ export default function Pokeballs({ SpecialPokeballs, StandardPokeballs, Apricor
       <div className={styles.pokeballs_page}>
       {
         StandardPokeballs.map((e) => ( 
-          <PokeballCard pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+          <PokeballCard key={uuidv4()} pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
         ))
       }
       {
         ApricornPokeballs.map((e) => ( 
-          <PokeballCard pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+          <PokeballCard key={uuidv4()} pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
         ))
       }
       {
         SpecialPokeballs.map((e) => ( 
-          <PokeballCard pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+          <PokeballCard key={uuidv4()} pokeballName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
         ))
       }
       </div>

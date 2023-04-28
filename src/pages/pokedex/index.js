@@ -5,6 +5,7 @@ import PokemonLogo from '../../../public/pokemon-name-img.png';
 import PokedexImg from '../../../public/pokedex-img.png';
 import styles from '../../styles/css.modules/pokedex.module.css';
 import Image from 'next/image';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Pokedex() {
 
@@ -49,7 +50,7 @@ export default function Pokedex() {
           <div className={styles.pokedex}>
           {
             data.map((e, index) => (
-              <PokemonCard pokemonId={(index + 1 + offset).toString()} keyCard={(index + 1 + offset).toString()} pokemonName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1 + offset}.png`}/> 
+              <PokemonCard pokemonId={(index + 1 + offset).toString()} key={uuidv4()} pokemonName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index+1 + offset}.png`}/> 
             )) 
           }
           </div>

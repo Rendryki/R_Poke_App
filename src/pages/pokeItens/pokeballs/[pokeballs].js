@@ -2,6 +2,7 @@ import PaginaAnteriorBtn from "@/components/paginaAnteriorBtn";
 import Image from "next/image";
 import styles from '../../../styles/css.modules/[pokeballs].module.css';
 import Head from "next/head";
+import { v4 as uuidv4 } from 'uuid';
 
 export const getStaticPaths = async() => {
     const resSpecial = await fetch(`https://pokeapi.co/api/v2/item-category/33/`);
@@ -61,7 +62,7 @@ export default function Pokeballs({pokeball}){
             <h1 className={styles.pokeball_name}>{pokeball.name}</h1> 
             <h2 className={styles.pokeball_category}>{pokeball.category.name}</h2>
             {pokeball.effect_entries.map((e) => (
-                <h2> {e.short_effect} </h2>
+                <h2 key={uuidv4()}> {e.short_effect} </h2>
             ))}
 
         </div>

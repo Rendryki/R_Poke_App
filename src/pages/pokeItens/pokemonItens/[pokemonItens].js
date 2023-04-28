@@ -2,6 +2,7 @@ import PaginaAnteriorBtn from "@/components/paginaAnteriorBtn";
 import Image from "next/image";
 import styles from '../../../styles/css.modules/[pokemonItens].module.css';
 import Head from "next/head";
+import { v4 as uuidv4 } from 'uuid';
 
 export const getStaticPaths = async() => {
     const resHealings = await fetch(`https://pokeapi.co/api/v2/item-category/27`);
@@ -86,7 +87,7 @@ export default function PokemonItem({item}){
             <h1 className={styles.pokemonItem_name}>{item.name}</h1> 
             <h2 className={styles.pokemonItemcategory}>{item.category.name}</h2>
             {item.effect_entries.map((e) => (
-                <h2> {e.short_effect} </h2>
+                <h2 key={uuidv4()}> {e.short_effect} </h2>
             ))}
 
         </div>

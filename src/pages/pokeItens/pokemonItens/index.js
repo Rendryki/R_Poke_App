@@ -4,6 +4,7 @@ import ItemCard from '@/components/itemCard';
 import styles from '../../../styles/css.modules/pokemonItens.module.css';
 import Image from 'next/image';
 import PokemonLogo from '../../../../public/pokemon-name-img.png';
+import { v4 as uuidv4 } from 'uuid';
 
 export async function getStaticProps() {
   const resHealings = await fetch(`https://pokeapi.co/api/v2/item-category/27`);
@@ -48,30 +49,30 @@ export default function PokemonItens({ HealingsList, RecoveryList, EffortBerryLi
       <h1 className={styles.pokemonItens__Title}>Remédios e Curas</h1>
       <div className={styles.pokemonItens_page}> 
       {HealingsList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       {RecoveryList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       </div>
 
       <h1 className={styles.pokemonItens__Title}>Doces</h1>
       <div className={styles.pokemonItens_page}> 
       {EffortBerryList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       {MedicineBerryList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       {OtherBerryList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       </div>
 
       <h1 className={styles.pokemonItens__Title}>Itens de Batalhas</h1>
       <div className={styles.pokemonItens_page}> 
       {BattleItemList.map((e) => (
-        <ItemCard keyCard={e.name} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
+        <ItemCard key={uuidv4()} ItemName={e.name} imageURL={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${e.name}.png`}/>
       ))}
       </div>
 

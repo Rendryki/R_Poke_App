@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from '../../styles/css.modules/[pokedex].module.css';
 import ErrorIMG from '../../../public/pikachu-sad-error-image.png';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Pokedex({}){
 
@@ -41,14 +42,14 @@ export default function Pokedex({}){
                 <div>
                 {
                     pokemonInfo.types?.map((type) => (
-                    <span className={`${styles.pokemon_type} ${styles[type.type.name]}`}>{type.type.name}</span>
+                    <span key={uuidv4()} className={`${styles.pokemon_type} ${styles[type.type.name]}`}>{type.type.name}</span>
                     ))
                 }
                 </div>
                 <div>
                 {
                     pokemonInfo.stats?.map((stats) => (
-                    <span className={styles.pokemon_stats}>{stats.stat.name}: {stats.base_stat}</span>
+                    <span key={uuidv4()} className={styles.pokemon_stats}>{stats.stat.name}: {stats.base_stat}</span>
                     ))
                 }
                 </div>
