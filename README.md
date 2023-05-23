@@ -1,4 +1,4 @@
-# **POKEAPP** <img src='https://user-images.githubusercontent.com/104596352/232617932-e529531b-1e7e-4706-84fe-2d8e1c7b5f36.png' width=20px>
+# **R_Poke_App** <img src='https://user-images.githubusercontent.com/104596352/232617932-e529531b-1e7e-4706-84fe-2d8e1c7b5f36.png' width=20px>
 
 This project is a Single Page Application developed in React, using Next.js!
 
